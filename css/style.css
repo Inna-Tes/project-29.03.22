@@ -1,0 +1,346 @@
+:root {
+    --black: #222222;
+    --light-pink: #F1E4E6;
+    --dark--pink: #F16D7F;
+    --sales-bkg-color: #4F4745;
+    --sales-text-white: #FFFFFF;
+    --catalog-bcg-color: #F8F8F8;
+    --catalog--item-text: #5D5D5D;
+    --information--text: #FBFBFB;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--black);
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.header {
+    background-color: var(--black);
+}
+
+.header__wrp {
+    display: flex;
+    justify-content: space-between;
+    min-height: 75px;
+    align-items: center;
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__link {
+    margin: 0 0 0 34px;
+}
+
+.header__nav {
+    display: none;
+}
+
+.header__button {
+    border: none;
+    background-color: transparent;
+}
+
+.brand {
+    display: flex;
+    margin: 0 0 63px 0;
+}
+
+.brand__title-wrp {
+    flex-grow: 1;
+    padding: 0 0 0 92px;
+    display: flex;
+    align-items: center;
+    background-color: var(--light-pink);
+}
+
+.brand__title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+}
+
+.brand__subtitle {
+    display: block;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+.brand__subtitle-pink {
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 44px;
+    color: var(--dark--pink);
+}
+
+.sales__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sales__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 360px;
+    min-height: 260px;
+    background-color: var(--sales-bkg-color);
+}
+
+.sales__item-women {
+    background-image: url(../img/sales-woman-bkg.jpg);
+}
+
+.sales__item-men {
+    background-image: url(../img/sales-men-bkg.jpg);
+}
+
+.sales__item-kids {
+    background-image: url(../img/sales-bebu-bkg.jpg);
+}
+
+.sales__item-accesories {
+    width: 100%;
+    background-image: url(../img/sales-acces-bkg.jpg);
+    min-height: 180px;
+    margin: 30px 0 97px 0;
+}
+
+.sales__text {
+    color: var(--sales-text-white);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.sales__title {
+    color: var(--dark--pink);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 22px;
+}
+
+.catalog__title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.catalog__text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+
+}
+
+.catalog__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 48px 0 48px 0;
+}
+
+.catalog__item {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    min-height: 420px;
+    background-color: var(--catalog-bcg-color);
+    padding: 0 0 20px 0;
+}
+
+.catalog__item-img {
+    margin: 0 0 25px 0;
+}
+
+.catalog__item-title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 0 0 12px 18px;
+}
+
+.catalog__item-text {
+    color: var(--catalog--item-text);
+    padding: 0 0 18px 18px;
+}
+
+.catalog__item-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 0 0 0 18px;
+    color: var(--dark--pink);
+}
+
+.catalog__button-wrp {
+    display: flex;
+    justify-content: center;
+}
+
+.catalog__button {
+    width: 211px;
+    min-height: 47px;
+    border: 1px solid #FF6A6A;
+}
+
+.catalog__link {
+    color: var(--dark--pink);
+    text-align: center;
+    text-decoration: none;
+}
+
+.information {
+    background-color: var(--black);
+    margin: 95px 0 0 0;
+}
+
+.information__wrp {
+    display: flex;
+    min-height: 341px;
+}
+
+.information__list {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.information__img {
+    padding: 0 0 25px 0;
+}
+
+.information__title {
+    font-size: 19.96px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0 0 16px 0;
+    color: var(--information--text)
+}
+
+.information__text {
+    font-size: 13.972px;
+    line-height: 17px;
+    color: var(--information--text)
+}
+
+.footer__wrp{
+    background-image: url(../img/feedback.png);
+    background-repeat: no-repeat;
+   background-position: center;
+}
+.footer__inner {
+    display: flex;
+    min-height: 448px;
+    align-items: center;
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.footer__subscribe {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.footer__button {
+    margin: 32px 0 0 0;
+}
+
+.footer__text {
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 24px;
+    text-align: center;
+    width: 359px;
+    margin: 20px 0 0 0;
+}
+
+.footer__title {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+}
+
+.footer__text-desc {
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.footer__main{
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+}
+.footer__line {
+    background-color: var(--black);
+}
+
+.footer__line-wrp {
+    display: flex;
+    justify-content: space-between;
+    min-height: 79px;
+    align-items: center;
+}
+
+.footer__line-list {
+    display: flex;
+}
+
+.footer__line-text {
+    font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: var(--sales-text-white);
+}
+
+.footer__line-link {
+    margin: 0 0 0 7px;
+}
+
