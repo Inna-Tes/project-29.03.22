@@ -1,0 +1,140 @@
+.catalog__title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.catalog__text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+
+.catalog__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 48px 0 16px 0;
+}
+
+.catalog__item {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    min-height: 420px;
+    background-color: $catalog-bcg-color;
+    padding: 0 0 20px 0;
+    margin: 0 0 32px 0;
+}
+
+.catalog__item-overlay {
+    background: $catalog__item-overlay;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.catalog__item-button-product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: 1px solid $sales-text-white;
+    color: $sales-text-white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    width: 138px;
+    min-height: 43px;
+}
+
+.catalog__item-button-basket {
+    fill: $sales-text-white;
+}
+
+.catalog__item-button-basket:hover,
+.catalog__item-button-basket:focus {
+    fill: $black;
+}
+
+.catalog__item-button-basket:active {
+    fill: $red;
+}
+
+.catalog__item-button-product:hover,
+.catalog__item-button-product:focus {
+    background: $dark--pink;
+    color: $black;
+}
+
+.catalog__item-button-product:active {
+    fill: $red;
+    color: $red;
+}
+
+.catalog__item-overlay,
+.catalog__item-button-product {
+    display: none;
+}
+
+.catalog__item-wrapper:hover .catalog__item-button-product,
+.catalog__item-wrapper:hover .catalog__item-overlay {
+    display: flex;
+}
+
+.catalog__item-wrapper {
+    position: relative;
+}
+
+.catalog__item-title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 25px 0 12px 18px;
+}
+
+.catalog__item-text {
+    color: $catalog--item-text;
+    padding: 0 0 18px 18px;
+}
+
+.catalog__item-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 0 0 0 18px;
+    color: $dark--pink;
+}
+
+.catalog__button-wrp {
+    display: flex;
+    justify-content: center;
+}
+
+.catalog__button {
+    width: 211px;
+    min-height: 47px;
+    border: 1px solid #FF6A6A;
+}
+
+.catalog__button:hover,
+.catalog__button:focus {
+    background: $dark--pink;
+    cursor: pointer;
+    outline: none;
+}
+
+.catalog__button:active {
+    opacity: 0.5;
+    background: $light-pink;
+}

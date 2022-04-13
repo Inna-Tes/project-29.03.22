@@ -1,0 +1,152 @@
+.header {
+    background-color: $black;
+}
+
+.header__wrp {
+    display: flex;
+    justify-content: space-between;
+    min-height: 75px;
+    align-items: center;
+    position: relative;
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+    width: 44px;
+    height: 38px;
+}
+
+.header__button-burger {
+    fill: $sales-text-white;
+}
+
+.header__button-burger:hover,
+.header__button-burger:focus {
+    fill: $dark--pink;
+}
+
+.header__button-burger:active {
+    fill: $red;
+}
+
+.header__button__burger {
+    display: flex;
+    justify-content: flex-end;
+    min-height: 20px;
+    cursor: pointer;
+}
+
+.header__nav {
+    position: absolute;
+    top: 100%;
+    right: -20%;
+    background: $sales-text-white;
+    display: none;
+    min-height: 764px;
+    width: 232px;
+}
+
+.header__nav:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 15px;
+    right: 17px;
+    background-image: url(../img/cross.svg);
+    background-size: 12px 12px;
+}
+
+.header__nav-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $black;
+    padding: 32px 0 4px 37px;
+}
+
+.header__link-img {
+    fill: $sales-text-white;
+}
+
+.header__link-img:hover,
+.header__link-img:focus {
+    fill: $dark--pink;
+}
+
+.header__link-img:active {
+    fill: $red;
+}
+
+.header__link-basket {
+    fill: $sales-text-white;
+}
+
+.header__link-basket:hover,
+.header__link-basket:focus {
+    fill: $dark--pink;
+}
+
+.header__link-basket:active {
+    fill: $red;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__link {
+    margin: 0 0 0 34px;
+}
+
+.header__button {
+    border: none;
+    background-color: transparent;
+}
+
+.wrp {
+    width: 100%;
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.header__inner{
+    display: flex;
+}
+
+.header__search {
+    padding: 3px 35px;
+    border: none;
+    outline: 1px solid black;
+    min-height: 50px;
+    background-color: $black;
+    color: $sales-text-white;
+  }
+  
+  .header__form {
+    position: relative;
+  }
+  
+  .header__search:hover {
+    outline: 1px solid $sales-text-white;
+  }
+  
+  .header__form:before {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height:26px;
+    background: $black;
+    top: 11px;
+    left: 2px;
+    background-image: url(../img/icon/loupe.svg);
+    background-size: 26px 26px;
+  }
+
+  
+    
+ 

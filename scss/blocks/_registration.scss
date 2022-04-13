@@ -1,0 +1,19 @@
+.registration__wrp {
+    background-color: $registration-bcg;
+    min-height: 148px;
+    width: 100%;
+}
+
+.registration__title {
+    color: $dark--pink;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 59px 0 0 0;
+}
+
+.registration {
+    display: flex;
+    margin: 64px 0 96px 0;
+}
