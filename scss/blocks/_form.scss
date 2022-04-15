@@ -1,0 +1,62 @@
+.form__input {
+    width: 360px;
+    min-height: 44px;
+    padding: 0 0 0 17px;
+    text-align: left;
+    margin: 0 0 20px 0;
+}
+
+.form__legend {
+    margin: 0 0 20px 0;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.form__text {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: $registration-input;
+}
+
+.form__radio {
+    display: flex;
+    margin: 11px 0 33px 0;
+}
+
+.form__button {
+    width: 167px;
+    min-height: 50px;
+    text-transform: uppercase;
+    background-color: $dark--pink;
+    color: $sales-text-white;
+    margin: 39px 0 0 0;
+    border: none;
+    position: relative;
+}
+
+.form__button:before {
+    content: '';
+    width: 17px;
+    height: 9px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-image: url(../img/arrow.svg);
+    background-size: 17px 9px;
+}
+
+.form__button:hover,
+.form__button:focus {
+    background: $sales-text-white;
+    cursor: pointer;
+    outline: none;
+    color: $black;
+    border: 1px solid $red;
+}
+
+.form__button:active {
+    background: $light-pink;
+    color: $red;
+}

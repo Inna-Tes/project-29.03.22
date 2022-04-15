@@ -1,0 +1,33 @@
+.information {
+    background-color: $black;
+    margin: 95px 0 0 0;
+}
+
+.information__wrp {
+    display: flex;
+    min-height: 341px;
+}
+
+.information__list {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.information__img {
+    padding: 0 0 25px 0;
+}
+
+.information__title {
+    font-size: 19.96px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0 0 16px 0;
+    color: $information--text;
+}
+
+.information__text {
+    font-size: 13.972px;
+    line-height: 17px;
+    color: $information--text;
+}

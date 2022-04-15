@@ -1,0 +1,39 @@
+.nav-sub-item__title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $dark--pink;
+    text-transform: uppercase;
+    padding: 0 0 0 33px;
+}
+
+.nav-sub-item {
+    padding: 20px 0 0 0;
+}
+
+.nav-sub-item__item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $black;
+    padding: 12px 0 0 55px;
+}
+
+.nav-sub-item__title {
+    text-decoration: none;
+}
+
+.nav-sub-item__item-link {
+    text-decoration: none;
+    color: $black;
+}
+
+.nav-sub-item__item-link:hover,
+.nav-sub-item__item-link:focus {
+    color: $catalog--item-text;
+    text-decoration: underline;
+}
+
+.nav-sub-item__item-link:active {
+    color: $red;
+}
