@@ -13,7 +13,10 @@
     padding: 59px 0 0 0;
 }
 
-.registration {
-    display: flex;
-    margin: 64px 0 96px 0;
+@media (max-width: $tablet-width) {
+    
+    .registration__title {
+        text-align: center;
+    }
+    
 }

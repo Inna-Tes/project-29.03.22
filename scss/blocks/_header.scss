@@ -44,6 +44,7 @@
     display: none;
     min-height: 764px;
     width: 232px;
+    z-index: 100;
 }
 
 .header__nav:before {
@@ -147,6 +148,21 @@
     background-size: 26px 26px;
   }
 
-  
-    
- 
+  @media (max-width: $tablet-width) {
+    .header__link {
+        display: none;
+    }  
+
+    .header__button-burger{
+        margin: 0 26px 0 0;
+    }
+
+    .header__search {
+        min-height: 40px;
+        width: 140px;
+      }
+
+      .header__form:before {
+        top: 7px;
+      }
+  }

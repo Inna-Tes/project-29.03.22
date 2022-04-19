@@ -50,3 +50,29 @@
     font-weight: 900;
     line-height: 22px;
 }
+
+@media (max-width: $desktop-width){
+    .sales__item {
+        width: 232px;
+        min-height: 167px;
+    }
+
+    .sales__item-accesories {
+        width: 100%;
+        min-height: 116px;
+        margin: 19px 0 154px 0;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .sales__item {
+        width: 343px;
+        min-height: 247px;
+        margin: 0 0 32px 0;
+    }
+
+    .sales__item-accesories {
+        min-height: 116px;
+        margin: 0 0 64px 0;
+    }
+}
