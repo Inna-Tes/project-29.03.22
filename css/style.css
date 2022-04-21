@@ -38,13 +38,13 @@ label {
 
 @media (max-width: 1599px) {
   .container {
-    width: 734px;
+    width: 95.5%;
   }
 }
 
 @media (max-width: 767px) {
   .container {
-    width: 359px;
+    width: 95.7%;
   }
 }
 
@@ -154,7 +154,7 @@ table {
     margin: 0 0 20px 0;
   }
   .brand__img {
-    width: 50%;
+    width: 50vw;
     min-height: 370px;
     object-fit: cover;
   }
@@ -347,19 +347,28 @@ table {
 
 @media (max-width: 1599px) {
   .catalog__item {
+    width: 49%;
     margin: 0 0 16px 0;
   }
   .catalog__list {
     margin: 72px 0 16px 0;
   }
+  .catalog__item-img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 767px) {
   .catalog__item {
+    width: 100%;
     margin: 0 0 16px 0;
   }
   .catalog__list {
     margin: 64px 0 25px 0;
+  }
+  .catalog__item-img {
+    width: 100%;
   }
 }
 
@@ -659,11 +668,23 @@ table {
   .form__registration {
     margin: 40px 0 96px 0;
   }
+  .form {
+    width: 48.8%;
+  }
+  .form__input {
+    width: 98%;
+  }
 }
 
 @media (max-width: 767px) {
   .form__registration {
     flex-wrap: wrap;
+  }
+  .form {
+    width: 95.7%;
+  }
+  .form__input {
+    width: 98%;
   }
 }
 
@@ -884,6 +905,7 @@ table {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 49%;
   }
   .information__text {
     padding: 0 0 48px 0;
@@ -908,6 +930,7 @@ table {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 92.5%;
   }
   .information__text {
     padding: 0 0 47px 0;
@@ -1014,6 +1037,7 @@ table {
 @media (max-width: 1599px) {
   .program__section {
     margin: 0 0 0 22px;
+    width: 48.2%;
   }
   .program__title {
     font-size: 16px;
@@ -1029,6 +1053,7 @@ table {
 @media (max-width: 767px) {
   .program__section {
     margin: 56px 0 0 0;
+    width: 95.7%;
   }
   .program__title {
     font-size: 16px;
@@ -1117,7 +1142,7 @@ table {
 
 @media (max-width: 1599px) {
   .sales__item {
-    width: 232px;
+    width: 31.6%;
     min-height: 167px;
   }
   .sales__item-accesories {
@@ -1125,17 +1150,41 @@ table {
     min-height: 116px;
     margin: 19px 0 154px 0;
   }
+  .sales__item-women {
+    background-position: top;
+    background-size: cover;
+  }
+  .sales__item-men {
+    background-position: top;
+    background-size: cover;
+  }
+  .sales__item-kids {
+    background-position: top;
+    background-size: cover;
+  }
 }
 
 @media (max-width: 767px) {
   .sales__item {
-    width: 343px;
+    width: 100%;
     min-height: 247px;
     margin: 0 0 32px 0;
   }
   .sales__item-accesories {
     min-height: 116px;
     margin: 0 0 64px 0;
+  }
+  .sales__item-women {
+    background-size: cover;
+  }
+  .sales__item-men {
+    background-size: cover;
+  }
+  .sales__item-kids {
+    background-size: cover;
+  }
+  .sales__item-accesories {
+    background-size: cover;
   }
 }
 /*# sourceMappingURL=style.css.map */

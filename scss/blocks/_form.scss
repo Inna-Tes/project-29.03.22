@@ -70,10 +70,25 @@
     .form__registration {
         margin: 40px 0 96px 0;
     }
+
+    .form {
+        width: 48.8%;
+    }
+
+    .form__input {
+        width: 98%;
+    }
 }
 
 @media (max-width: $tablet-width) {
     .form__registration {
         flex-wrap: wrap;
+    }
+    .form {
+        width: 95.7%;
+    }
+
+    .form__input {
+        width: 98%;
     }
 }

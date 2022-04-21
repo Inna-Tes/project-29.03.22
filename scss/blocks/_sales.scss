@@ -53,7 +53,7 @@
 
 @media (max-width: $desktop-width){
     .sales__item {
-        width: 232px;
+        width: 31.6%;
         min-height: 167px;
     }
 
@@ -62,11 +62,27 @@
         min-height: 116px;
         margin: 19px 0 154px 0;
     }
+
+    .sales__item-women {
+        background-position: top;
+        background-size: cover;
+     }
+     
+     .sales__item-men {
+        background-position: top;
+        background-size: cover;
+     }
+     
+     .sales__item-kids {
+        background-position: top;
+        background-size: cover;
+     }
+    
 }
 
 @media (max-width: $tablet-width) {
     .sales__item {
-        width: 343px;
+        width: 100%;
         min-height: 247px;
         margin: 0 0 32px 0;
     }
@@ -74,5 +90,21 @@
     .sales__item-accesories {
         min-height: 116px;
         margin: 0 0 64px 0;
+    }
+
+    .sales__item-women {
+       background-size: cover;
+    }
+    
+    .sales__item-men {
+        background-size: cover;
+    }
+    
+    .sales__item-kids {
+        background-size: cover;
+    }
+    
+    .sales__item-accesories {
+        background-size: cover;
     }
 }
