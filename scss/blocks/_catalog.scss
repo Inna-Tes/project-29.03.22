@@ -138,3 +138,23 @@
     opacity: 0.5;
     background: $light-pink;
 }
+
+@media (max-width: $desktop-width) {
+    .catalog__item {
+        margin: 0 0 16px 0;
+    }
+
+    .catalog__list {
+        margin: 72px 0 16px 0;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .catalog__item {
+        margin: 0 0 16px 0;
+    }
+
+    .catalog__list {
+        margin: 64px 0 25px 0;
+    }
+}
