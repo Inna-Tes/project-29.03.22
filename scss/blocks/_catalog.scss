@@ -141,20 +141,31 @@
 
 @media (max-width: $desktop-width) {
     .catalog__item {
+        width: 49%;
         margin: 0 0 16px 0;
     }
 
     .catalog__list {
         margin: 72px 0 16px 0;
     }
+
+    .catalog__item-img{
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 @media (max-width: $tablet-width) {
     .catalog__item {
+        width: 100%;
         margin: 0 0 16px 0;
     }
 
     .catalog__list {
         margin: 64px 0 25px 0;
+    }
+
+    .catalog__item-img{
+        width: 100%;
     }
 }
