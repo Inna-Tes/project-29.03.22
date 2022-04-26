@@ -1,0 +1,15 @@
+.carousel__wrp {
+    background-color: $carousel__wrp;
+}
+
+@media (max-width: $desktop-width) {
+    .mx-auto{
+        width: 61%;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .mx-auto{
+        width: 100%;
+    }
+}

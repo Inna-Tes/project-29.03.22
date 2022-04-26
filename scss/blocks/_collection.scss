@@ -1,0 +1,130 @@
+.collection__wrp {
+    border: 1px solid #EAEAEA;
+    min-height: 600px;
+    width: 1140px;
+    text-align: center;
+    position: relative;
+    top: -40px;
+    background-color: $sales-text-white;
+}
+
+hr {
+    width: 641px;
+    align-items: center;
+    margin: 0;
+}
+
+.collection_hr {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 40px 0;
+}
+
+.collection__title {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+    color: $dark--pink;
+    padding: 65px 0 27px 0;
+}
+
+.collection__subtitle {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 21px;
+    color: $catalog--item-text;
+    margin: 0;
+}
+
+.collection__text {
+    display: flex;
+    justify-content: center;
+}
+
+.collection__excerpt {
+    font-size: 14px;
+    line-height: 16px;
+    color: $catalog--item-text;
+    width: 555px;
+    text-align: center;
+    margin: 48px 0 32px 0;
+}
+
+.collection__desc {
+    color: $dark--pink;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0;
+}
+.collection__item-button-product-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.collection__button{
+    display: flex;
+    justify-content: center;
+}
+
+.collection__item-button-product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $sales-text-white;
+    border: 1px solid $dark--pink;
+    color: $dark--pink;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    width: 211px;
+    min-height: 47px;
+    margin: 32px 0 65px 0;
+}
+
+.collection__item-button-basket {
+    fill: $dark--pink;
+    left: 5px;
+}
+
+.collection__item-button-basket:hover,
+.collection__item-button-basket:focus {
+    fill: $black;
+}
+
+.collection__item-button-basket:active {
+    fill: $red;
+}
+
+.collection__item-button-product:hover,
+.collection__item-button-product:focus {
+    background: $dark--pink;
+    color: $black;
+}
+
+.collection__item-button-product:active {
+    fill: $red;
+    color: $red;
+}
+
+@media (max-width: $desktop-width) {
+    .collection__wrp {
+        width:100%;
+    }
+
+    .collection__text {
+        width:100%;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .collection__wrp {
+        width:100%;
+    }
+
+    .collection__text {
+        width:100%;
+    }
+}
