@@ -1,0 +1,30 @@
+.arrivals__wrp {
+    background-color: $registration-bcg;
+    min-height: 148px;
+    width: 100%;
+}
+
+.arrivals__title {
+    color: $dark--pink;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.arrivals__wrp{
+    display: flex;
+    align-items: center;
+}
+
+.arrivals__wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: $tablet-width) {
+    .arrivals__wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+}
