@@ -66,10 +66,11 @@
     .information__text3 {
         width: 360px;
     }
+
 }
 
 @media (max-width: $tablet-width) {
-    
+
     .information__wrp {
         min-height: 610px;
         align-items: center;
@@ -96,8 +97,9 @@
     .information__title {
         padding: 0 0 14px 0;
     }
-    
+
     .information__text3 {
         width: 347px;
     }
+
 }

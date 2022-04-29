@@ -1,0 +1,17 @@
+.toolbar {
+    display: flex;
+    margin: 51px 0 0 0;
+}
+
+.dropdown {
+    flex-grow: 1;
+}
+
+.toolbar__dropdown {
+    display: flex;
+    flex-grow: 1.5;
+}
+
+.btn {
+    text-transform: uppercase;
+}
