@@ -12,18 +12,18 @@
     line-height: 29px;
 }
 
-.arrivals__wrp{
+.arrivals__wrp {
     display: flex;
     align-items: center;
 }
 
-.arrivals__wrap{
+.arrivals__wrap {
     display: flex;
     justify-content: space-between;
 }
 
 @media (max-width: $tablet-width) {
-    .arrivals__wrap{
+    .arrivals__wrap {
         flex-direction: column;
         align-items: center;
     }

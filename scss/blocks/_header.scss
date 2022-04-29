@@ -115,7 +115,7 @@
     display: block;
 }
 
-.header__inner{
+.header__inner {
     display: flex;
 }
 
@@ -126,43 +126,44 @@
     min-height: 50px;
     background-color: $black;
     color: $sales-text-white;
-  }
-  
-  .header__form {
+}
+
+.header__form {
     position: relative;
-  }
-  
-  .header__search:hover {
+}
+
+.header__search:hover {
     outline: 1px solid $sales-text-white;
-  }
-  
-  .header__form:before {
+}
+
+.header__form:before {
     content: '';
     position: absolute;
     width: 26px;
-    height:26px;
+    height: 26px;
     background: $black;
     top: 11px;
     left: 2px;
     background-image: url(../img/icon/loupe.svg);
     background-size: 26px 26px;
-  }
+}
 
-  @media (max-width: $tablet-width) {
+@media (max-width: $tablet-width) {
     .header__link {
         display: none;
-    }  
+    }
 
-    .header__button-burger{
+    .header__button-burger {
         margin: 0 26px 0 0;
     }
 
     .header__search {
         min-height: 40px;
         width: 140px;
-      }
+    }
 
-      .header__form:before {
+    .header__form:before {
         top: 7px;
-      }
-  }
+    }
+    
+}

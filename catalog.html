@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
@@ -17,14 +18,14 @@
 <body>
     <header class="header">
         <div class="container header__wrp">
-            <div class="header__inner"> 
+            <div class="header__inner">
                 <a href="index.html">
                     <img class="header__logo" src="./img/logo-img.png" alt="logo">
                 </a>
                 <form class="header__form" action="#">
                     <label class="visually-hidden" for="seacrh">поиск</label>
                     <input class="header__search" id="seacrh" type="search" placeholder="Search">
-                  </form>
+                </form>
             </div>
             <ul class="header__list">
                 <li class="header__item">
@@ -39,7 +40,7 @@
                             <h2 class="header__nav-title">menu</h2>
                             <ul class="header__nav-list">
                                 <li class="header__nav-item nav-sub-item">
-                                    <a href="catalog.html" class="nav-sub-item__title">man</a>
+                                    <a href="#" class="nav-sub-item__title">man</a>
                                     <ul class="nav-sub-item__list">
                                         <li class="nav-sub-item__item">
                                             <a href="#" class="nav-sub-item__item-link">Accessories</a>
@@ -104,7 +105,7 @@
                     <div class="wrp" id="wrp"></div>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="header__link">
+                    <a href="registration.html" class="header__link">
                         <svg class="header__link-img" width="29" height="29" viewBox="0 0 29 29"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -125,67 +126,207 @@
         </div>
     </header>
     <main>
-        <section>
-            <div class="registration__wrp">
-                <div class="container">
-                    <h1 class="registration__title">registration</h1>
+        <section class="arrivals">
+            <div class="arrivals__wrp">
+                <div class="arrivals__wrap container">
+                    <div class="arrivals__inner">
+                        <h1 class="arrivals__title">new arrivals</h1>
+                    </div>
+                    <div class="breadcrumb_wrp">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item text-uppercase"><a class="breadcrumb-img" href="#">home</a>
+                                </li>
+                                <li class="breadcrumb-item text-uppercase"><a class="breadcrumb-img" href="#">men</a>
+                                </li>
+                                <li class="breadcrumb-item text-uppercase active" aria-current="page"><span
+                                        class="breadcrumb-item-3">new arrivals</span></li>
+                            </ol>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </section>
-        <div class="container">
-            <div class="form__registration">
-                <div class="form">
-                    <form action="#">
-                        <fieldset>
-                            <legend class="form__legend">Your Name</legend>
-                            <label>
-                                <span class="visually-hidden">text</span>
-                                <input class="form__input" type="text" required placeholder="First Name">
-                            </label>
-                            <label>
-                                <span class="visually-hidden">text</span>
-                                <input class="form__input" type="text" required placeholder="Last Name">
-                            </label>
-                        </fieldset>
-                        <div class="form__radio">
-                            <input type="radio" id="contactChoice1" name="contact" value="male">
-                            <label for="contactChoice1">Male</label>
-                            <input type="radio" id="contactChoice2" name="contact" value="female">
-                            <label for="contactChoice2">Female</label>
-                        </div>
-                        <fieldset>
-                            <legend class="form__legend">Login details</legend>
-                            <label>
-                                <span class="visually-hidden">text</span>
-                                <input class="form__input" type="email" required placeholder="Email">
-                            </label>
-                            <label>
-                                <span class="visually-hidden">text</span>
-                                <input class="form__input" type="password" required placeholder="Password">
-                            </label>
-                            <p class="form__text">Please use 8 or more characters, with at least 1 number and a mixture
-                                of uppercase and lowercase letters</p>
-                        </fieldset>
-                        <button type="submit" class="form__button">join now</button>
-                    </form>
+        <div class="toolbar container">
+            <div class="dropdown">
+                <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Filter <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="22px" class="bi bi-filter-left" viewBox="0 0 16 16">
+                        <path d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item filter-item">category</a></li>
+                    <li><a class="dropdown-item" href="#">Accessories</a></li>
+                    <li><a class="dropdown-item" href="#">Bags</a></li>
+                    <li><a class="dropdown-item" href="#">Denim</a></li>
+                    <li><a class="dropdown-item" href="#">Hoodies & Sweatshirts</a></li>
+                    <li><a class="dropdown-item" href="#">Jackets & Coats</a></li>
+                    <li><a class="dropdown-item" href="#">Polos</a></li>
+                    <li><a class="dropdown-item" href="#">Shirts</a></li>
+                    <li><a class="dropdown-item" href="#">Shoes</a></li>
+                    <li><a class="dropdown-item" href="#">Sweaters & Knits</a></li>
+                    <li><a class="dropdown-item" href="#">T-Shirts</a></li>
+                    <li><a class="dropdown-item" href="#">Tanks</a></li>
+                    <li><a class="dropdown-item filter-item">brand</a></li>
+                    <li><a class="dropdown-item filter-item">designer</a></li>
+                </ul>
+            </div>
+            <div class="toolbar__dropdown">
+                <div class="btn-group">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuClickableInside"
+                        data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                        trending now
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+                        <li><a class="dropdown-item" href="#">Элемент меню</a></li>
+                        <li><a class="dropdown-item" href="#">Элемент меню</a></li>
+                        <li><a class="dropdown-item" href="#">Элемент меню</a></li>
+                    </ul>
                 </div>
-                <div class="program__section">
-                    <section class="program">
-                        <h1 class="program__title">loyalty has its perks</h1>
-                        <p class="program__text">Get in on the loyalty program where you can earn points and unlock
-                            serious
-                            perks. Starting with these as soon as you join:</p>
-                        <ul class="program__items">
-                            <li class="program__item">15% off welcome offer</li>
-                            <li class="program__item">Free shipping, returns and exchanges on all orders</li>
-                            <li class="program__item">$10 off a purchase on your birthday</li>
-                            <li class="program__item">Early access to products</li>
-                            <li class="program__item">Exclusive offers & rewards</li>
-                        </ul>
-                    </section>
+                <div class="btn-group">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuClickableInside"
+                        data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                        size
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+                        <li><a class="dropdown-item" href="#">XS</a></li>
+                        <li><a class="dropdown-item" href="#">S</a></li>
+                        <li><a class="dropdown-item" href="#">M</a></li>
+                        <li><a class="dropdown-item" href="#">L</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuClickableInside"
+                        data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                        price
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+                        <li><a class="dropdown-item" href="#">Элемент меню</a></li>
+                        <li><a class="dropdown-item" href="#">Элемент меню</a></li>
+                        <li><a class="dropdown-item" href="#">Элемент меню</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
+        <section class="catalog-grid">
+            <div class="container">
+                <ul class="catalog-grid__list">
+                    <li class="catalog-grid__item box-1">
+                        <div class="catalog-grid__item-wrapper">
+                            <img class="catalog-grid__item-img" src="./img/product-1.jpg" alt="product-1">
+                        </div>
+                        <h3 class="catalog-grid__item-title">ellery x m'o capsule</h3>
+                        <p class="catalog-grid__item-text">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery
+                            teams up with Moda Operandi.</p>
+                        <p class="catalog-grid__item-desc">$52.00</p>
+                    </li>
+                    <li class="catalog-grid__item box-2">
+                        <div class="catalog-grid__item-wrapper">
+                            <img class="catalog-grid__item-img" src="./img/product-7.jpg" alt="product-7">
+                        </div>
+                        <h3 class="catalog-grid__item-title">ellery x m'o capsule</h3>
+                        <p class="catalog-grid__item-text">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery
+                            teams up with Moda Operandi.</p>
+                        <p class="catalog-grid__item-desc">$52.00</p>
+                    </li>
+                    <li class="catalog-grid__item box-3">
+                        <div class="catalog-grid__item-wrapper">
+                            <img class="catalog-grid__item-img" src="./img/product-3.jpg" alt="product-3">
+                        </div>
+                        <h3 class="catalog-grid__item-title">ellery x m'o capsule</h3>
+                        <p class="catalog-grid__item-text">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery
+                            teams up with Moda Operandi.</p>
+                        <p class="catalog-grid__item-desc">$52.00</p>
+                    </li>
+                    <li class="catalog-grid__item box-4">
+                        <div class="catalog-grid__item-wrapper">
+                            <img class="catalog-grid__item-img" src="./img/product-4.jpg" alt="product-4">
+                        </div>
+                        <h3 class="catalog-grid__item-title">ellery x m'o capsule</h3>
+                        <p class="catalog-grid__item-text">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery
+                            teams up with Moda Operandi.</p>
+                        <p class="catalog-grid__item-desc">$52.00</p>
+                    </li>
+                    <li class="catalog-grid__item box-5">
+                        <div class="catalog-grid__item-wrapper">
+                            <img class="catalog-grid__item-img" src="./img/product-8.jpg" alt="product-8">
+                        </div>
+                        <h3 class="catalog-grid__item-title">ellery x m'o capsule</h3>
+                        <p class="catalog-grid__item-text">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery
+                            teams up with Moda Operandi.</p>
+                        <p class="catalog-grid__item-desc">$52.00</p>
+                    </li>
+                    <li class="catalog-grid__item box-6">
+                        <div class="catalog-grid__item-wrapper">
+                            <img class="catalog-grid__item-img" src="./img/product-9.jpg" alt="product-9">
+                        </div>
+                        <h3 class="catalog-grid__item-title">ellery x m'o capsule</h3>
+                        <p class="catalog-grid__item-text">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery
+                            teams up with Moda Operandi.</p>
+                        <p class="catalog-grid__item-desc">$52.00</p>
+                    </li>
+                    <li class="catalog-grid__item box-7">
+                        <div class="catalog-grid__item-wrapper">
+                            <img class="catalog-grid__item-img" src="./img/product-10.jpg" alt="product-10">
+                        </div>
+                        <h3 class="catalog-grid__item-title">ellery x m'o capsule</h3>
+                        <p class="catalog-grid__item-text">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery
+                            teams up with Moda Operandi.</p>
+                        <p class="catalog-grid__item-desc">$52.00</p>
+                    </li>
+                    <li class="catalog-grid__item box-8">
+                        <div class="catalog-grid__item-wrapper">
+                            <img class="catalog-grid__item-img" src="./img/product-11.jpg" alt="product-11">
+                        </div>
+                        <h3 class="catalog-grid__item-title">ellery x m'o capsule</h3>
+                        <p class="catalog-grid__item-text">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery
+                            teams up with Moda Operandi.</p>
+                        <p class="catalog-grid__item-desc">$52.00</p>
+                    </li>
+                    <li class="catalog-grid__item box-9">
+                        <div class="catalog-grid__item-wrapper">
+                            <img class="catalog-grid__item-img" src="./img/product-12.jpg" alt="product-12">
+                        </div>
+                        <h3 class="catalog-grid__item-title">ellery x m'o capsule</h3>
+                        <p class="catalog-grid__item-text">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery
+                            teams up with Moda Operandi.</p>
+                        <p class="catalog-grid__item-desc">$52.00</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                <li class="page-item"><a class="page-link">.....</a></li>
+                <li class="page-item"><a class="page-link" href="#">20</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </main>
     <footer class="footer">
         <div class="footer__wrp">
@@ -239,5 +380,8 @@
         </div>
     </footer>
     <script src="burger.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

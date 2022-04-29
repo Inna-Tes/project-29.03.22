@@ -51,7 +51,7 @@
     line-height: 22px;
 }
 
-@media (max-width: $desktop-width){
+@media (max-width: $desktop-width) {
     .sales__item {
         width: 31.6%;
         min-height: 167px;
@@ -66,18 +66,18 @@
     .sales__item-women {
         background-position: top;
         background-size: cover;
-     }
-     
-     .sales__item-men {
+    }
+
+    .sales__item-men {
         background-position: top;
         background-size: cover;
-     }
-     
-     .sales__item-kids {
+    }
+
+    .sales__item-kids {
         background-position: top;
         background-size: cover;
-     }
-    
+    }
+
 }
 
 @media (max-width: $tablet-width) {
@@ -93,18 +93,19 @@
     }
 
     .sales__item-women {
-       background-size: cover;
+        background-size: cover;
     }
-    
+
     .sales__item-men {
         background-size: cover;
     }
-    
+
     .sales__item-kids {
         background-size: cover;
     }
-    
+
     .sales__item-accesories {
         background-size: cover;
     }
+
 }
